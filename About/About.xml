@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Boombug (Continued)</name>
+  <packageId>Mlie.Boombugs</packageId>
+  <author>Poshspider</author>
+  <url>https://github.com/emipa606/Boombugs</url>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+    <li>1.2</li>
+  </supportedVersions>
+  <modDependencies />
+  <loadAfter />
+  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+Update of Poshspiders mod
+https://steamcommunity.com/sharedfiles/filedetails/?id=1399697593
+
+- The boom-insects now inherits the base insects instead of copying them
+- Added a boom-hive that spawns boom-insects, chemfuel and fuel-puddles
+- Added a boom version of the Infestation-incident, much harder but rarer
+- Only the Boomspider now have a big explosion on death
+- All boom-insects and their hive are now almost immune to fire
+
+[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+
+[table]
+    [tr]
+        [td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+        [td][url=https://github.com/emipa606/Boombugs][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+    [/tr]
+[/table]
+	
+[img]https://i.imgur.com/NOW7jU1.png[/img]
+Adds a new species of explosive Megaspider, Megapede and Megascarab to the game!
+
+This mod is a work in progress, as well as my first mod, so please do be patient with me ^^'
+
+To do:
+
+1 - Add Boomspiders, Boomscarabs, Boompedes - DONE
+
+2 - Add Boomjelly, Boomglowpods, BoomHive - WIP
+
+3 - Add infestation event - WIP
+
+[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
+</description>
+</ModMetaData>
+

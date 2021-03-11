@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAttributeAdd">
+    <xpath>/Defs/ThingDef[defName="Megascarab"]</xpath>
+    <attribute>Name</attribute>
+    <value>Megascarab</value>
+  </Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>/Defs/ThingDef[defName="Boomscarab"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>Megascarab</value>
+  </Operation>
+  <Operation Class="PatchOperationAttributeAdd">
+    <xpath>/Defs/ThingDef[defName="Spelopede"]</xpath>
+    <attribute>Name</attribute>
+    <value>Spelopede</value>
+  </Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>/Defs/ThingDef[defName="Boompede"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>Spelopede</value>
+  </Operation>
+  <Operation Class="PatchOperationAttributeAdd">
+    <xpath>/Defs/ThingDef[defName="Megaspider"]</xpath>
+    <attribute>Name</attribute>
+    <value>Megaspider</value>
+  </Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>/Defs/ThingDef[defName="Boomspider"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>Megaspider</value>
+  </Operation>
+</Patch>

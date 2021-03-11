@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingNaturalBase">
+    <defName>BoomHive</defName>
+    <label>boomhive</label>
+    <description>An explosive hive of giant boom-insects. If activated, it will spawn additional insects and hives over time, as well as valuable chemfuel.</description>
+    <thingClass>Hive</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/BoomHive</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.6</drawSize>
+    </graphicData>
+    <uiIconScale>0.65</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>130</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <ArmorRating_Heat>4.00</ArmorRating_Heat>
+    </statBases>
+    <pathCost>42</pathCost>
+    <receivesSignals>true</receivesSignals>
+    <blockWind>true</blockWind>
+    <tickerType>Normal</tickerType>
+    <passability>PassThroughOnly</passability>
+    <killedLeavings>
+      <Chemfuel>80</Chemfuel>
+    </killedLeavings>
+    <comps>
+      <li Class="CompProperties_CanBeDormant">
+        <startsDormant>true</startsDormant>
+        <canWakeUpFogged>false</canWakeUpFogged>
+      </li>
+      <li Class="CompProperties_WakeUpDormant" />
+      <li Class="CompProperties_SpawnerPawn">
+        <spawnablePawnKinds>
+          <li>Boomscarab</li>
+          <li>Boompede</li>
+          <li>Boomspider</li>
+        </spawnablePawnKinds>
+        <lordJob>LordJob_DefendAndExpandHive</lordJob>
+        <spawnSound>Hive_Spawn</spawnSound>
+        <initialPawnsPoints>200</initialPawnsPoints>
+        <maxSpawnedPawnsPoints>500</maxSpawnedPawnsPoints>
+      </li>
+      <li Class="CompProperties_SelfhealHitpoints">
+        <ticksPerHeal>6000</ticksPerHeal>
+        <!-- 60k ticks = 1 day, 10 hp per day -->
+      </li>
+      <li Class="CompProperties_SpawnerHives" />
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Chemfuel</thingToSpawn>
+        <spawnCount>40</spawnCount>
+        <spawnIntervalRange>26000~30000</spawnIntervalRange>
+        <spawnMaxAdjacent>80</spawnMaxAdjacent>
+        <spawnForbidden>true</spawnForbidden>
+        <saveKeysPrefix>fuel</saveKeysPrefix>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>7</heatPerSecond>
+        <heatPushMaxTemperature>55</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_SpawnerFilth">
+        <filthDef>Filth_Fuel</filthDef>
+        <spawnCountOnSpawn>10</spawnCountOnSpawn>
+        <spawnMtbHours>4</spawnMtbHours>
+        <spawnRadius>5</spawnRadius>
+      </li>
+      <li Class="CompProperties_Maintainable">
+        <ticksHealthy>60000</ticksHealthy>
+        <ticksNeedsMaintenance>60000</ticksNeedsMaintenance>
+        <damagePerTickRare>10</damagePerTickRare>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

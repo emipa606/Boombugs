@@ -8,6 +8,14 @@
       <ArmorRating_Heat>4.00</ArmorRating_Heat>
       <ComfyTemperatureMax>250</ComfyTemperatureMax>
     </statBases>
+    <comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Chemfuel</milkDef>
+        <milkIntervalDays>2</milkIntervalDays>
+        <milkAmount>6</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
     <race>
       <deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
       <executionRange>2.5</executionRange>

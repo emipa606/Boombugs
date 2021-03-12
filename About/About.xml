@@ -18,7 +18,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1399697593
 - The boom-insects now inherits the base insects instead of copying them
 - Added a boom-hive that spawns boom-insects, chemfuel and fuel-puddles
 - Added a boom version of the Infestation-incident, much harder but rarer
-- Only the Boomspider now have a big explosion on death
+- Only the Boomspider now have a big explosion on death, the rest uses the smaller version
 - All boom-insects and their hive are now almost immune to fire
 
 [img]https://i.imgur.com/7Gzt3Rg.png[/img]

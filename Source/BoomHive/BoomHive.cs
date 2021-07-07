@@ -6,7 +6,7 @@ namespace Boombugs
 {
     internal class BoomHive : Hive
     {
-        public new static readonly List<PawnKindDef> spawnablePawnKinds = new();
+        public new static readonly List<PawnKindDef> spawnablePawnKinds = new List<PawnKindDef>();
 
         public new static void ResetStaticData()
         {

@@ -11,7 +11,7 @@ namespace Boombugs
     [StaticConstructorOnStartup]
     internal class BoomTunnelHiveSpawner : TunnelHiveSpawner
     {
-        private static MaterialPropertyBlock matPropertyBlock = new();
+        private static MaterialPropertyBlock matPropertyBlock = new MaterialPropertyBlock();
 
         [TweakValue("Gameplay", 0f, 1f)] private static readonly float DustMoteSpawnMTB = 0.2f;
 
@@ -22,8 +22,8 @@ namespace Boombugs
         private static readonly Material TunnelMaterial =
             MaterialPool.MatFrom("Things/Filth/Grainy/GrainyA", ShaderDatabase.Transparent);
 
-        private static readonly List<ThingDef> filthTypes = new();
-        private readonly FloatRange ResultSpawnDelay = new(26f, 30f);
+        private static readonly List<ThingDef> filthTypes = new List<ThingDef>();
+        private readonly FloatRange ResultSpawnDelay = new FloatRange(26f, 30f);
         private int secondarySpawnTick;
         private Sustainer sustainer;
 
@@ -88,7 +88,7 @@ namespace Boombugs
             if (Rand.MTBEventOccurs(DustMoteSpawnMTB, 1f, 1.TicksToSeconds()))
             {
                 var loc = new Vector3(vector.x, 0f, vector.z) {y = AltitudeLayer.MoteOverhead.AltitudeFor()};
-                MoteMaker.ThrowDustPuffThick(loc, Map, Rand.Range(1.5f, 3f), new Color(1f, 1f, 1f, 2.5f));
+                FleckMaker.ThrowDustPuffThick(loc, Map, Rand.Range(1.5f, 3f), new Color(1f, 1f, 1f, 2.5f));
             }
 
             if (secondarySpawnTick > Find.TickManager.TicksGame)

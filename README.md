@@ -1,6 +1,6 @@
 # Boombugs
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of Poshspiders mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1399697593
@@ -13,23 +13,14 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1399697593
 - Tame boom-insects can be milked for chemfuel
 - Works well with https://steamcommunity.com/sharedfiles/filedetails/?id=2359846788]BoomMod Expanded
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-    [tr]
-        [td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-        [td]https://github.com/emipa606/Boombugs]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-    [/tr]
-[/table]
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 Adds a new species of explosive Megaspider, Megapede and Megascarab to the game!
 
-This mod is a work in progress, as well as my first mod, so please do be patient with me ^^&apos;
+This mod is a work in progress, as well as my first mod, so please do be patient with me ^^'
 
 To do:
 
@@ -39,7 +30,7 @@ To do:
 
 3 - Add infestation event - WIP
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 
@@ -49,6 +40,7 @@ To do:
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+
 
 
 

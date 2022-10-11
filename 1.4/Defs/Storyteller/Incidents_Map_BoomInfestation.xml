@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ============================== Big threats ==============================-->
+  <IncidentDef>
+    <defName>BoomInfestation</defName>
+    <label>boom infestation</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Boombugs.IncidentWorker_BoomInfestation</workerClass>
+    <letterLabel>Boom Infestation</letterLabel>
+    <letterText>Giant explosive insects are tunneling towards you! They will break through in a few seconds and plant hives.\n\nThe hives will spawn more insects and more hives.\n\nIf you don't want the insects to infest the whole area, destroy the hives. But beware - the bugs will defend their home and they are extremely volatile.</letterText>
+    <letterDef>ThreatBig</letterDef>
+    <baseChance>0.4</baseChance>
+    <minRefireDays>60</minRefireDays>
+    <category>ThreatBig</category>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>400</minThreatPoints>
+    <tale>Infestation</tale>
+  </IncidentDef>
+  <ThingDef ParentName="EtherealThingBase">
+    <defName>BoomTunnelHiveSpawner</defName>
+    <label>boom tunnel</label>
+    <thingClass>Boombugs.BoomTunnelHiveSpawner</thingClass>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <alwaysFlee>true</alwaysFlee>
+  </ThingDef>
+</Defs>

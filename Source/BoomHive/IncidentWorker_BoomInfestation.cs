@@ -1,5 +1,4 @@
-﻿using System;
-using RimWorld;
+﻿using RimWorld;
 using UnityEngine;
 using Verse;
 
@@ -11,7 +10,7 @@ internal class IncidentWorker_BoomInfestation : IncidentWorker_Infestation
     {
         var map = (Map)parms.target;
         var t = SpawnTunnels(Mathf.Max(GenMath.RoundRandom(parms.points / 220f), 1), map);
-        SendStandardLetter(parms, t, Array.Empty<NamedArgument>());
+        SendStandardLetter(parms, t, []);
         Find.TickManager.slower.SignalForceNormalSpeedShort();
         return true;
     }

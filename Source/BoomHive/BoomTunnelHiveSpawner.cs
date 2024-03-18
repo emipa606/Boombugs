@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using LudeonTK;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -22,9 +23,9 @@ internal class BoomTunnelHiveSpawner : TunnelHiveSpawner
     private static readonly Material TunnelMaterial =
         MaterialPool.MatFrom("Things/Filth/Grainy/GrainyA", ShaderDatabase.Transparent);
 
-    private static readonly List<ThingDef> filthTypes = new List<ThingDef>();
-    private readonly FloatRange ResultSpawnDelay = new FloatRange(26f, 30f);
-    private int secondarySpawnTick;
+    private static readonly List<ThingDef> filthTypes = [];
+    private new readonly FloatRange ResultSpawnDelay = new FloatRange(26f, 30f);
+    private new int secondarySpawnTick;
     private Sustainer sustainer;
 
     public new static void ResetStaticData()
@@ -78,8 +79,9 @@ internal class BoomTunnelHiveSpawner : TunnelHiveSpawner
 
         sustainer.Maintain();
         var vector = Position.ToVector3Shifted();
-        if (Rand.MTBEventOccurs(FilthSpawnMTB, 1f, 1.TicksToSeconds()) && CellFinder.TryFindRandomReachableCellNear(
-                Position, Map, FilthSpawnRadius, TraverseParms.For(TraverseMode.NoPassClosedDoors), null, null,
+        if (Rand.MTBEventOccurs(FilthSpawnMTB, 1f, 1.TicksToSeconds()) &&
+            CellFinder.TryFindRandomReachableCellNearPosition(Position, Position, Map, FilthSpawnRadius,
+                TraverseParms.For(TraverseMode.NoPassClosedDoors), null, null,
                 out var result))
         {
             FilthMaker.TryMakeFilth(result, Map, filthTypes.RandomElement());

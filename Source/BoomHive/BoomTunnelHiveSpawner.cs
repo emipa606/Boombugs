@@ -12,7 +12,7 @@ namespace Boombugs;
 [StaticConstructorOnStartup]
 internal class BoomTunnelHiveSpawner : TunnelHiveSpawner
 {
-    private static MaterialPropertyBlock matPropertyBlock = new MaterialPropertyBlock();
+    private static MaterialPropertyBlock matPropertyBlock = new();
 
     [TweakValue("Gameplay", 0f, 1f)] private static readonly float DustMoteSpawnMTB = 0.2f;
 
@@ -24,7 +24,7 @@ internal class BoomTunnelHiveSpawner : TunnelHiveSpawner
         MaterialPool.MatFrom("Things/Filth/Grainy/GrainyA", ShaderDatabase.Transparent);
 
     private static readonly List<ThingDef> filthTypes = [];
-    private new readonly FloatRange ResultSpawnDelay = new FloatRange(26f, 30f);
+    private new readonly FloatRange ResultSpawnDelay = new(26f, 30f);
     private new int secondarySpawnTick;
     private Sustainer sustainer;
 
@@ -48,7 +48,7 @@ internal class BoomTunnelHiveSpawner : TunnelHiveSpawner
             secondarySpawnTick = Find.TickManager.TicksGame + ResultSpawnDelay.RandomInRange.SecondsToTicks();
         }
 
-        CreateSustainer();
+        createSustainer();
     }
 
 
@@ -61,7 +61,7 @@ internal class BoomTunnelHiveSpawner : TunnelHiveSpawner
         Scribe_Values.Look(ref spawnedByInfestationThingComp, "spawnedByInfestationThingComp");
     }
 
-    private void CreateSustainer()
+    private void createSustainer()
     {
         LongEventHandler.ExecuteWhenFinished(delegate
         {
@@ -70,7 +70,7 @@ internal class BoomTunnelHiveSpawner : TunnelHiveSpawner
         });
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         if (!Spawned)
         {

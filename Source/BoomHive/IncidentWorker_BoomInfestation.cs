@@ -9,13 +9,13 @@ internal class IncidentWorker_BoomInfestation : IncidentWorker_Infestation
     protected override bool TryExecuteWorker(IncidentParms parms)
     {
         var map = (Map)parms.target;
-        var t = SpawnTunnels(Mathf.Max(GenMath.RoundRandom(parms.points / 220f), 1), map);
-        SendStandardLetter(parms, t, []);
+        var t = spawnTunnels(Mathf.Max(GenMath.RoundRandom(parms.points / 220f), 1), map);
+        SendStandardLetter(parms, t);
         Find.TickManager.slower.SignalForceNormalSpeedShort();
         return true;
     }
 
-    private static Thing SpawnTunnels(int hiveCount, Map map, bool spawnAnywhereIfNoGoodCell = false,
+    private static Thing spawnTunnels(int hiveCount, Map map, bool spawnAnywhereIfNoGoodCell = false,
         bool ignoreRoofedRequirement = false, string questTag = null)
     {
         if (!InfestationCellFinder.TryFindCell(out var loc, map))

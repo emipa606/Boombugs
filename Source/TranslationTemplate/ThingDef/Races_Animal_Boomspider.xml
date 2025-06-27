@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: boomspider -->
+  <Boomspider.label>boomspider</Boomspider.label>
+  <!-- EN: Created as a biological weapon to be used in urban areas, the Boomspider is very similar to its unperverted Megaspider cousin, with the key difference being that it explodes violently upon death, making safely dispatching one a difficult task. -->
+  <Boomspider.description>Created as a biological weapon to be used in urban areas, the Boomspider is very similar to its unperverted Megaspider cousin, with the key difference being that it explodes violently upon death, making safely dispatching one a difficult task.</Boomspider.description>
+  <!-- EN: insect meat -->
+  <Boomspider.race.meatLabel>insect meat</Boomspider.race.meatLabel>
+  <!-- EN: head claw -->
+  <Boomspider.tools.head_claw.label>head claw</Boomspider.tools.head_claw.label>
+  <!-- EN: head -->
+  <Boomspider.tools.head.label>head</Boomspider.tools.head.label>
+</LanguageData>

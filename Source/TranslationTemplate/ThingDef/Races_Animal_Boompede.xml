@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: boompede -->
+  <Boompede.label>boompede</Boompede.label>
+  <!-- EN: A medium-sized bioengineered bug the size of a sheep. The Boomopede is the middle caste of a hive, taking care of most work tasks as well as fighting with its claws. -->
+  <Boompede.description>A medium-sized bioengineered bug the size of a sheep. The Boomopede is the middle caste of a hive, taking care of most work tasks as well as fighting with its claws.</Boompede.description>
+  <!-- EN: head claw -->
+  <Boompede.tools.head_claw.label>head claw</Boompede.tools.head_claw.label>
+  <!-- EN: head -->
+  <Boompede.tools.head.label>head</Boompede.tools.head.label>
+</LanguageData>

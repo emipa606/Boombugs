@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: boomscarab -->
+  <Boomscarab.label>boomscarab</Boomscarab.label>
+  <!-- EN: A large, genetically-engineered beetle. Once the worker caste of an artifical ecosystem of insectoids designed to fight in urban areas, it is now usually seen without its deadlier insectoid cousins. Still, its size and hard shell make it dangerous when it attacks, and upon death it explodes. -->
+  <Boomscarab.description>A large, genetically-engineered beetle. Once the worker caste of an artifical ecosystem of insectoids designed to fight in urban areas, it is now usually seen without its deadlier insectoid cousins. Still, its size and hard shell make it dangerous when it attacks, and upon death it explodes.</Boomscarab.description>
+  <!-- EN: mandibles -->
+  <Boomscarab.tools.mandibles.label>mandibles</Boomscarab.tools.mandibles.label>
+  <!-- EN: head -->
+  <Boomscarab.tools.head.label>head</Boomscarab.tools.head.label>
+</LanguageData>

@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 1865674995
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 94857640850b5f09873767ee214aa8c0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 94857640850b5f09873767ee214aa8c0
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.Boombugs/Textures/Things/Pawn/Animal/Boomspider/Boomspider_east.png
+- Assets/Data/Mlie.Boombugs/Textures/Things/Pawn/Animal/Boompede/Boompede_east.png
+- Assets/Data/Mlie.Boombugs/Textures/Things/Pawn/Animal/Boomspider/Boomspider_north.png
+- Assets/Data/Mlie.Boombugs/Textures/Things/Buildings/BoomHive.png
+- Assets/Data/Mlie.Boombugs/Textures/Things/Pawn/Animal/Boomspider/Boomspider_south.png
+- Assets/Data/Mlie.Boombugs/Textures/Things/Pawn/Animal/Boomscarab/Boomscarab_east.png
+- Assets/Data/Mlie.Boombugs/Textures/Things/Pawn/Animal/Boompede/Boompede_north.png
+- Assets/Data/Mlie.Boombugs/Textures/Things/Pawn/Animal/Boomscarab/Boomscarab_north.png
+- Assets/Data/Mlie.Boombugs/Textures/Things/Pawn/Animal/Boomscarab/Boomscarab_south.png
+- Assets/Data/Mlie.Boombugs/Textures/Things/Pawn/Animal/Boompede/Boompede_south.png
+Dependencies: []

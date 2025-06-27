@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: boom infestation -->
+  <BoomInfestation.label>boom infestation</BoomInfestation.label>
+  <!-- EN: Boom Infestation -->
+  <BoomInfestation.letterLabel>Boom Infestation</BoomInfestation.letterLabel>
+  <!-- EN: Giant explosive insects are tunneling towards you! They will break through in a few seconds and plant hives.\n\nThe hives will spawn more insects and more hives.\n\nIf you don't want the insects to infest the whole area, destroy the hives. But beware - the bugs will defend their home and they are extremely volatile. -->
+  <BoomInfestation.letterText>Giant explosive insects are tunneling towards you! They will break through in a few seconds and plant hives.
+
+The hives will spawn more insects and more hives.
+
+If you don't want the insects to infest the whole area, destroy the hives. But beware - the bugs will defend their home and they are extremely volatile.</BoomInfestation.letterText>
+</LanguageData>

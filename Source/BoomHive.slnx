@@ -3,4 +3,24 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="BoomHive/Boombugs.csproj" />
+  <Folder Name="/.github/">
+    <File Path="../.github/copilot-instructions.md" />
+  </Folder>
+  <Folder Name="/XML/1.7/Patches/">
+    <File Path="../1.7/Patches/Fix_Inheritance.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ThingsDefs_Races/">
+    <File Path="../1.7/Defs/ThingsDefs_Races/Races_Animal_Boompede.xml" />
+    <File Path="../1.7/Defs/ThingsDefs_Races/Races_Animal_Boomscarab.xml" />
+    <File Path="../1.7/Defs/ThingsDefs_Races/Races_Animal_Boomspider.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/Storyteller/">
+    <File Path="../1.7/Defs/Storyteller/Incidents_Map_BoomInfestation.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ThingsDefs_Buildings/">
+    <File Path="../1.7/Defs/ThingsDefs_Buildings/Building_Boomhive.xml" />
+  </Folder>
 </Solution>
